@@ -1,0 +1,171 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+/* ---------- Header ---------- */
+
+.header{
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32b9cd;
+}
+
+.titulo{
+    color: #32b9cd;
+    width: fit-content; /* adequar o tamanho disponível para o conteúdo */
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.header .container{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #e3b062;
+}
+
+.header a{
+    text-decoration: none;
+    color: #e3b062;
+}
+
+.agora{
+    font-weight: 800;
+}
+
+/* ---------- Banner ---------- */
+
+.banner{
+    height: var(--tamanho-banner);
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    display: flex;
+}
+
+.banner .container{
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+}
+
+/* ---------- Login ---------- */
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    width: 55%;
+    border-radius: 10px;
+    color: #dd6b98;
+    margin: 0;
+    padding: 8px;
+}
+
+.login .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+    gap: 5px;
+}
+
+.campo span{
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: #32b9cd;
+    border-bottom: 2px #32b9cd solid;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.botao{
+    background: #ea2466;
+    height: 30px;
+    width: 25%;
+    border-bottom: 2px #ea2466 solid;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+    background-color: #32b9cd;
+    height: var(--tamanho-footer);
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+
+.footer .container{
+    justify-content: center;
+    text-align: center;
+}
+
+.version{
+    font-size: 12px;
+}

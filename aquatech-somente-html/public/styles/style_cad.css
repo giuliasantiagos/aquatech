@@ -9,14 +9,6 @@ body{
     background-color: black;
 }
 
-/* nomear uma variável, posso chamar esta em qualquer lugar! */
-:root{ 
-    --tamanho-header: 80px;
-    --tamanho-footer: 90px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - 
-    var(--tamanho-footer) - 2px);
-}
-
 /* ---------- Header ---------- */
 
 .header{
@@ -36,7 +28,6 @@ body{
     margin: auto;
 }
 
-/* Classe container com tudo que estiver dentro de header */
 .header .container{
     justify-content: space-between;
     align-items: center;
@@ -46,8 +37,8 @@ body{
 .navbar{
     width: 300px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     color: #e3b062;
 }
@@ -65,52 +56,105 @@ body{
 
 .banner{
     height: var(--tamanho-banner);
-    color: white;
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
-    background-size: cover; /* cobre o tamanho da tela */
+    background-size: cover;
+    display: flex;
 }
 
 .banner .container{
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 84vh;
 }
 
-.banner .container p{
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    font-size: 36px;
-}
+/* ---------- Login ---------- */
 
-.banner .container span{
-    font-weight: 800;
-}
-
-/* ---------- Missão, visão e valores ---------- */
-
-.social{
-    background-color: #e5e5e5;
+.login{
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    background: #e5e5e5;
+    width: 40%;
+    height: 430px;
+    border-radius: 10px;
+    color: #dd6b98;
+    margin: 0;
+    padding: 20px;
 }
 
-.social .container .boxes{
+.login .container{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    padding: 30px 0;
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    justify-content: center;
     align-items: center;
 }
 
-.box img{
-    width: 170px;
+.card-cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-cadastro h2{
+    font-size: 30px;
+}
+
+.formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.campo span{
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: #32b9cd;
+    border-bottom: 2px #32b9cd solid;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ea2466;
+    height: 30px;
+    width: 20%;
+    border-bottom: 2px #ea2466 solid;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 /* ---------- Footer ---------- */
@@ -131,7 +175,3 @@ body{
 .version{
     font-size: 12px;
 }
-
-
-
-
